@@ -35,6 +35,13 @@ body {
 .options li{
     margin-top: 10px;
     margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+li:hover {
+    color: blueviolet;
+    transform: scale(1.1)
 }
 .talk-button {
     background-color: blueviolet;
@@ -53,7 +60,7 @@ body {
    margin-top: 0;
    padding: 4px;
    text-align: center;
-   background-image: linear-gradient(to bottom right, rgb(40, 39, 39), black);
+   background-image: linear-gradient(to bottom right, black, rgb(37, 21, 49), black);
 }
 
 .face h1 {
@@ -70,7 +77,7 @@ body {
 @keyframes fadeIn {
         from {
             opacity: 0;
-            transform: translateY(20px);
+            transform: translateY(70px);
         }
         to {
             opacity: 1;
@@ -97,4 +104,112 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     animation: fadeIn 1.2s ease-in-out;
 
+}
+
+.landing-buttons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.landing-buttons button {
+    border-color: blueviolet;
+    border-width: 1px;
+    color: aliceblue;
+    border-radius: 11px;
+    height: 57px;
+    width: auto;
+    font-weight: bold;
+    padding: 10px 38px;
+    font-size: 15px;
+    margin-top: 12px;
+    margin-bottom: 35px;
+}
+
+.first-button {
+    animation: fadeIn 1.4s ease-in-out;
+    background-image: linear-gradient(to top right, black 40%,  rgb(178, 75, 178));
+    transition: transform 0.3s ease;
+
+}
+
+.first-button:hover {
+    background-image: linear-gradient(to top right, rgb(178, 75, 178),  black 70%);
+    transform: scale(1.1)
+      
+
+}
+.second-button {
+   animation: fadeIn 1.8s ease-in-out;
+   background-image: linear-gradient(to top right, black 30%,  blueviolet);
+   transition: transform 0.3s ease;
+
+
+}
+
+.second-button:hover {
+    background-image: linear-gradient(to top right, blueviolet,  black 85%);
+    transform: scale(1.1)
+
+}
+
+.badges-div {
+    margin-top: 40px;
+    padding-top: 7px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 55px;
+    
+}
+
+.badge {
+    color: aliceblue;
+    height: 160px;
+    width: 22%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding-top: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(54, 53, 53);
+    background-color: rgb(30, 17, 39);
+  transition: transform 0.6s ease;
+
+}
+.badge:hover{
+    border: 1px solid blueviolet;
+    transform: translateY(-5px);
+    background-color: rgb(37, 9, 54);
+ }
+.badge h2 {
+    margin-bottom: 0;
+    font-size: 50px;
+
+}
+
+.badge p{
+    margin-top: 2px;
+    font-size: 15px;
+    
+}
+
+.built-for-impact {
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+.built-for-impact h2 {
+    font-weight: bold;
+    font-size: 35px;
+    color: blueviolet;
+    margin-bottom: 10px;
+}
+
+.built-for-impact p {
+    font-size: 18px;
+    color: gray;
+    margin-top: 0;
 }
