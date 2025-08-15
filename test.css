@@ -1,7 +1,0 @@
-body {
-    background-image: linear-gradient(to right, rgb(69, 69, 69), black);
-}
-
-body:hover {
-    background-color: aliceblue;
-}
